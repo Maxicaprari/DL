@@ -5,10 +5,15 @@ Este repositorio contiene proyectos e implementaciones de algoritmos de Deep Lea
 # Contenido 📂
 
 **Redes neuronales básicas**: Perceptrón, MLP (Multilayer Perceptron), redes feedforward.
+
 **Redes convolucionales (CNNs)**: Clasificación de imágenes y generación de descripciones de imágenes (Image Captioning).
+
 **Redes recurrentes (RNNs, LSTM, GRU)**: Procesamiento de secuencias y predicción de series temporales.
+
 **Autoencoders**: Reducción de dimensionalidad y generación de datos.
+
 **Modelos de clasificación y predicción**: Aplicaciones en datasets como Fashion-MNIST, diagnóstico de cáncer de mama (Breast Cancer), y predicción de riesgo crediticio.
+
 **Optimización y técnicas avanzadas**: Dropout, tuning de hiperparámetros, uso de optimizadores como Adam y SGD.
 
 # Objetivo 🎯
@@ -18,5 +23,7 @@ Crear una colección de implementaciones prácticas que sirvan como referencia y
 Cada carpeta contiene:
 
 Código fuente del modelo.
+
 Descripción del proyecto en README individual.
+
 Ejemplos prácticos y resultados obtenidos.
