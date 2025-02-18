@@ -10,7 +10,8 @@ Este repositorio contiene proyectos e implementaciones de algoritmos de Deep Lea
 
 **Redes recurrentes (RNNs, LSTM, GRU)**: Procesamiento de secuencias y predicción de series temporales.
 
-**Autoencoders**: Reducción de dimensionalidad y generación de datos.
+**Autoencoders**: Reducción de dimensionalidad y generación de datos. 
+**GNs** 
 
 **Modelos de clasificación y predicción**: Aplicaciones en datasets como Fashion-MNIST, diagnóstico de cáncer de mama (Breast Cancer), y predicción de riesgo crediticio.
 
