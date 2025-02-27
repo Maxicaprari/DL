@@ -46,3 +46,39 @@ El vocabulario base consiste en 256 tokens correspondientes a todos los posibles
 
 
 
+
+## GPT4Tokenizer
+Esta clase implementa un tokenizador compatible con el tokenizador utilizado por GPT-4, basado en el algoritmo cl100k_base de OpenAI.
+**Características técnicas**
+
+Extiende la clase RegexTokenizer utilizando el patrón de segmentación específico de GPT-4
+Utiliza el algoritmo de tokenización BPE (Byte-Pair Encoding) con una configuración compatible con el tokenizador oficial
+Incluye manejo especial para la permutación de bytes que existe en el tokenizador original de OpenAI
+Incorpora tokens especiales utilizados por GPT-4 (<|endoftext|>, <|fim_prefix|>, etc.)
+
+**Componentes clave**
+Funciones auxiliares
+
+bpe(): Función auxiliar que reconstruye el bosque de fusiones para un token dado
+recover_merges(): Recupera los pares originales de fusiones a partir de los tokens ya fusionados
+
+Constantes
+
+GPT4_SPLIT_PATTERN: Expresión regular utilizada para segmentar el texto antes de la tokenización
+GPT4_SPECIAL_TOKENS: Diccionario de tokens especiales utilizados por GPT-4
+
+**Métodos principales**
+
+__init__(): Inicializa el tokenizador usando tiktoken para obtener los rangos de fusión oficiales
+_encode_chunk(): Codifica fragmentos de texto aplicando la permutación específica de bytes
+decode(): Decodifica IDs de tokens a texto, invirtiendo la permutación de bytes
+save_vocab(): Guarda el vocabulario en un formato legible para visualización
+
+**Notas de implementación**
+
+Este tokenizador no está diseñado para ser entrenado (train() no implementado)
+No soporta guardar/cargar el modelo directamente (save()/load() no implementados)
+Gestiona una peculiaridad histórica: los tokens correspondientes a bytes individuales están permutados en un orden diferente
+
+
+
