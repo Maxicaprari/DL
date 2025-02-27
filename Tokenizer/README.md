@@ -81,4 +81,39 @@ No soporta guardar/cargar el modelo directamente (save()/load() no implementados
 Gestiona una peculiaridad histórica: los tokens correspondientes a bytes individuales están permutados en un orden diferente
 
 
+## TOKENIZERS LLM COURSE
+
+Este código proporciona una implementación sencilla para explorar y visualizar cómo funcionan diferentes tokenizadores utilizados en Modelos de Lenguaje de gran escala (LLMs).
+Funcionalidad principal
+El código incluye una función show_tokens que permite visualizar cómo diferentes tokenizadores procesan un texto de entrada, mostrando:
+
+Cada token con un color distintivo para facilitar su identificación visual
+El tamaño del vocabulario del tokenizador
+La representación textual de cada token
+
+# Tokenizadores analizados
+El código compara cómo diferentes modelos populares tokenizaron el mismo texto:
+
+BERT (bert-base-cased)
+GPT-2 (gpt2)
+GPT-4 (Xenova/gpt-4)
+Qwen (Qwen/Qwen2-VL-7B-Instruct)
+FLAN-T5 (google/flan-t5-small)
+Phi-3 (microsoft/Phi-3-mini-4k-instruct)
+
+**Características de demostración**
+El ejemplo de entrada incluye deliberadamente elementos que suelen ser desafiantes para los tokenizadores:
+
+Texto en inglés y con MAYÚSCULAS
+Emojis y caracteres en diferentes idiomas (como chino)
+Elementos de código (palabras clave de programación, tabs)
+Números y operaciones matemáticas
+
+**Notas técnicas**
+
+Se utiliza la biblioteca transformers de Hugging Face para cargar los tokenizadores
+La función implementa un sistema de coloreado ANSI para visualización en terminales
+Demuestra las diferencias en cómo cada modelo segmenta el texto, lo que afecta directamente a su comprensión del lenguaje
+
+
 
