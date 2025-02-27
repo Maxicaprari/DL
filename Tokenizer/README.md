@@ -95,10 +95,15 @@ La representación textual de cada token
 El código compara cómo diferentes modelos populares tokenizaron el mismo texto:
 
 BERT (bert-base-cased)
+
 GPT-2 (gpt2)
+
 GPT-4 (Xenova/gpt-4)
+
 Qwen (Qwen/Qwen2-VL-7B-Instruct)
+
 FLAN-T5 (google/flan-t5-small)
+
 Phi-3 (microsoft/Phi-3-mini-4k-instruct)
 
 **Características de demostración**
